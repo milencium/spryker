@@ -1,0 +1,76 @@
+zed-biznis logika
+fasada- entry point u zed biznis layer
+controller prima datu od submitane forme i onda calla metodu
+od fasade da bih spremio formu
+
+setup workenv
+
+https://mstart.atlassian.net/wiki/spaces/ME/pages/2125070341/Developer+onboarding
+https://mstart.atlassian.net/wiki/spaces/FEC/pages/1957986305/Onboarding+configuration
+
+
+
+dodat natuknicu za prvo instalirat Docker
+dodat natuknicu da se instalira wsl prije dockera
+
+kako sada dodati odredjene linije, to napraviti sa notepad++ koji je runnan kao administrator
+
+bolji path do resolv.conf
+
+Kako sada pristupit resolv.conf fileu ?
+Proxy konfiguracija nije jasna do kraja
+
+stavit redne brojeve na korake
+
+za usera privilegije stavit linux
+
+QXkQ43KknP34rV7H5xd3 sifra od app bitbucketa
+
+1.instalira wsl
+2.instalira docker i namistija postavke
+3.fix dns
+4.proxy configuration
+5.importani certifikati
+check out project
+
+Spryker dokumentacija:
+SEOS main parts objasnit
+
+
+1.dignit docker
+2.spojit se na bazu
+3.napravit crud
+4.proucit crud
+
+sudo bash -c "echo '127.0.0.1 backend-api.at.spryker.local backend-api.de.spryker.local backend-api.us.spryker.local backend-gateway.at.spryker.local backend-gateway.de.spryker.local backend-gateway.us.spryker.local backoffice.at.spryker.local backoffice.de.spryker.local backoffice.us.spryker.local glue.at.spryker.local glue.de.spryker.local glue.us.spryker.local mail.spryker.local queue.spryker.local redis-commander.spryker.local scheduler.spryker.local spryker.local swagger.spryker.local yves.at.spryker.local yves.de.spryker.local yves.us.spryker.local' >> /etc/hosts"
+
+
+CRUD-Zed
+https://docs.spryker.com/docs/scos/dev/tutorials-and-howtos/introduction-tutorials/tutorial-architectural-walkthrough-spryker-commerce-os.html#build-the-hellospryker-module-in-zed-to-reverse-the-string
+1.napravit HelloSpryker\Communication\Controller, dodat twig
+2.otic na link https://zed.mysprykershop.com/hello-spryker da bi se vidio prikaz
+3.Napravit novi folder Business sa Facade, Factory, Model i mozda interface
+Model performa biznis logiku, Factory instancira objekt i injecta njegov dependency, Facade radi kao main API
+
+Crud-Yves
+1.Dodat novi Yves modul pod imenom HelloSpryker te dodat kontrolera koji returna view
+2.Kreirat folder Plugin, Router i tu kreirat routera koji builda /hello-spryker rutu
+3.registrirat  HelloSprykerRouteProviderPlugin u aplikaciji tako da aplikacija zna za kontrolerovu akciju 
+4.dodat twig
+
+Kreiranje DTO-a i njegovo korištenje
+docker/sdk console transfer:generate
+
+Da bi se mogla slati data iz Yves u Zed i općenito za komunikaciju između objekata
+
+stavit na github napravljeno
+
+primjeri:
+https://github.com/theravel/b2b-demo-shop/pulls
+https://docs.spryker.com/docs/scos/dev/tutorials-and-howtos/introduction-tutorials/tutorial-architectural-walkthrough-spryker-commerce-os.html
+
+
+
+
+
+
